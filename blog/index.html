@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="image" content="img/icons/icon48x48.png">
+    <link rel="icon" href="/img/icons/icon48x48.png">
+    <link rel="stylesheet" href="/styles/bootstrap-icons.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <title>Blog | AD Awesome Tech</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Start Navbar-->
+    <nav class="navbar navbar-expand-md fixed-top navbar-inverse navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logos/logo-sm.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog/">All</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">Featured</a></li>
+                <li><a class="dropdown-item" href="zsh-terminal/">Terminal Customization</a></li>
+                <li><a class="dropdown-item">Optimizing Samba for macOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" target="_blank" href="https://www.youtube.com/channel/UCjMklVqZIPRwcFXKUOXhHYg/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YPHVUWAAE54JU&item_name=Raising+money+for+more+awesome+content%21&currency_code=USD">Donate</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item col-6 col-md-auto">
+              <a class="nav-link p-2" href="https://github.com/ADawesomeguy" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+                <p class="d-md-none">GitHub</p>
+              </a>
+            </li>
+            <li class="nav-item col-6 col-md-auto">
+              <a class="nav-link p-2" href="https://www.youtube.com/channel/UCjMklVqZIPRwcFXKUOXhHYg" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 20 14"><title>YouTube</title><path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>                
+                <p class="d-md-none">YouTube</p>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input disabled class="form-control me-2" type="search" placeholder="Unavailable" aria-label="Search">
+            <button class="btn btn-outline-secondary disabled" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Article List -->
+    <main>
+      <div class="container" style="padding-top: 60px;">
+        <div class="row">
+          <h1 class="mt-5 display-1">Articles</h1>
+        </div>
+        <hr>
+        <div class="row">
+          <a class="link-secondary display-6 mb-5">How to configure Samba to work better with macOS</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a class="link-secondary display-6 mb-5" href="zsh-terminal/">Improve the way your terminal looks and feels</a>
+        </div>
+      </div>
+    </main>
+    <!-- End Article List-->
+  </body>
+  <footer class="footer mt-auto py-3 bg-dark text-center">
+    <div class="container">
+      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="">GitHub</a>. A star couldn't hurt...</span>
+    </div>
+  </footer>
+</html>

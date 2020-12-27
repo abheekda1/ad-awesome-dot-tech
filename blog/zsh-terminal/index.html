@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="image" content="img/icons/icon48x48.png">
+    <link rel="icon" href="/img/icons/icon48x48.png">
+    <link rel="stylesheet" href="/styles/bootstrap-icons.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/prism.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/prism.js"></script>
+    <title>ZSH Tutorial | AD Awesome Tech</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Start Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-inverse navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logos/logo-sm.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog/">All</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">Featured</a></li>
+                <li><a class="dropdown-item" href="#">Terminal Customization</a></li>
+                <li><a class="dropdown-item" >Optimizing Samba for macOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" target="_blank" href="https://www.youtube.com/channel/UCjMklVqZIPRwcFXKUOXhHYg/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YPHVUWAAE54JU&item_name=Raising+money+for+more+awesome+content%21&currency_code=USD">Donate</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item col-6 col-md-auto">
+              <a class="nav-link p-2" href="https://github.com/ADawesomeguy" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
+                <p class="d-md-none">GitHub</p>
+              </a>
+            </li>
+            <li class="nav-item col-6 col-md-auto">
+              <a class="nav-link p-2" href="https://www.youtube.com/channel/UCjMklVqZIPRwcFXKUOXhHYg" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 20 14"><title>YouTube</title><path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>                
+                <p class="d-md-none">YouTube</p>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input disabled class="form-control me-2" type="search" placeholder="Unavailable" aria-label="Search">
+            <button class="btn btn-outline-secondary disabled" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Article List -->
+    <main>
+      <div class="container" style="padding-top: 60px;">
+        <div class="row">
+          <h1 class="mt-5 display-2">Improve the way your terminal looks and feels</h1>
+        </div>
+        <div class="row">
+          <h2 class="text-secondary mt-3 display-5">By: Abheek Dhawan</h2>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="container mt-3">
+            <p class="lead">This is a simple tutorial on how to improve the look and feel of 
+              your terminal with these three things:</p>
+            <ul>
+              <li><h5>ZSH: A robust alternative to traditional BASH</h5></li>
+              <li><h5>Oh-My-ZSH: An amazing framework for <code>ZSH</code> with many plugins and themes</h5></li>
+              <li><h5>zsh-autosuggestions: An advanced plugin that makes command completion
+                suggestions based on previous commands.</h5></li>
+            </ul>
+            <div class="border text-center rounded border-dark bg-light">
+              <figure class="figureborder mx-3 my-3">
+                <img src="img/zsh-terminal-1.png" class="figure-img img-fluid mx-auto rounded d-block">
+                <figcaption class="figure-caption">The finished product</figcaption>
+              </figure>
+            </div>
+            <h2 class="mt-5 mb-3">
+              Step 1:
+            </h2>
+            <p class="lead">
+              The first thing to do is to install <code>ZSH</code>. This is default on macOS now, and the shell is located at <code>/bin/zsh</code>.
+              If you're using Linux, however, you'll need to install it through the package manager and run the command:
+            </p>
+            <pre class="rounded command-line language-bash" data-user="ad" data-host="server"><code>zsh</code></pre>
+            <p class="lead">
+              in order to go through the first time user setup. Now that <code>ZSH</code> is installed, we have to set it
+              as the default. To do this, run:
+            </p>
+            <pre class="rounded command-line language-bash" data-user="ad" data-host="server"><code>chsh -s /path/to/zsh</code></pre>
+            <p class="lead">
+              with <code>/path/to/zsh</code> being either <code>/usr/bin/zsh</code> or <code>/bin/zsh</code> depending on your system.
+            </p>
+            <h2 class="mt-5 mb-3">
+              Step 2:
+            </h2>
+            <p class="lead">
+              This step involves installing <code>Oh-My-ZSH</code> and defining plugins and themes. The first thing to do is
+              of course installing <code>Oh-My-ZSH</code>. This is extremely easy and involves running one command:
+            </p>
+            <pre class="rounded command-line language-bash" data-user="ad" data-host="server"><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/master/tools/install.sh)"</code></pre>
+            <p class="lead">
+              Once it's installed, it selects a theme called <code>robby russell</code>. To change that, we just need to edit
+              the <code>~/.zshrc</code> file with something like <code>vim</code> or <code>nano</code>, and edit the line that says:
+            </p>
+            <pre class="rounded language-vim" data-user="ad" data-host="server"><code>ZSH_THEME = "robbyrussell"</code></pre>
+            <p class="lead">
+              and change <code>robby russell</code> to whatever theme you want. You can find all themes and plugins on the <code>Oh-My-ZSH</code> GitHub page. However,
+              many themes require <code>Powerline Fonts</code>. Luckily, these fonts are really easy to install. Simply clone
+              the repository and run the install script.
+            </p>
+            <pre class="command-line language-bash" data-user="ad" data-host="server"><code>git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh</code></pre>
+            <p class="lead">
+              Once you've installed the Powerline Fonts, here are a few theme suggestions:
+            </p>
+            <ul>
+              <li><h5>Powerlevel10K (requires external installation)</h5></li>
+              <li><h5>agnoster</h5></li>
+              <li><h5>bira</h5></li>
+            </ul>
+            <p class="lead">
+              Installing plugins is a very similar story. However, instead of editing:
+            </p>
+              <pre class="rounded language-vim" data-user="ad" data-host="server"><code>ZSH_THEME = "robbyrussell"</code></pre>
+            <p class="lead">
+              you have to edit:
+            </p>
+              <pre class="rounded language-vim" data-user="ad" data-host="server"><code>plugins = ()</code></pre>
+            <p class="lead">
+              There are hundreds of plugins to choose from, from ones for your OS to things like git and vim.
+            </p>
+            <h2 class="mt-5 mb-3">
+              Step 3:
+            </h2>
+            <p class="lead">
+              Now that we've installed both ZSH and Oh-My-ZSH, there's just one last thing to do: installing zsh-autosuggestions.
+              I find these to be extremely helpful because they recommend commands that I've used previously. To install it as an
+              Oh-My-ZSH custom plugin, you just have to run this script:
+            </p>
+            <pre class="command-line language-bash" data-user="ad" data-host="server"><code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions</code></pre>
+            <p class="lead">
+              Once that's done, simply add it as a plugin in the ~/.zshrc file.
+            </p>
+            <h2 class="mt-5 mb-3">
+              Conclusion
+            </h2>
+            <p class="lead">
+              Now, you should have an awesome looking terminal in which you can navigate completions with your arrow keys,
+          get suggestions based of your previous commands, and it's super customizable! You can take your terminal even
+          further by installing an analytics tool like screenfetch or archey and adding it to the end of your
+          ~/.zshrc file. A fun alternative would be adding "fortune | cowsay" to the end of your ~/.zshrc file.
+            </p>
+            <h5 class="mt-5">Sources and Helpful Links:</h5>
+            <ul>
+              <a class="link-secondary" target="_blank" href="https://github.com/ohmyzsh/ohmyzsh"><li>https://github.com/ohmyzsh/ohmyzsh</li></a>
+              <a class="link-secondary" target="_blank" href="https://github.com/powerline/fonts"><li>https://github.com/powerline/fonts</li></a>
+              <a class="link-secondary" target="_blank" href="https://github.com/zsh-users/zsh-autosuggestions"><li>https://github.com/zsh-users/zsh-autosuggestions</li></a>
+              <a class="link-secondary" target="_blank" href="https://github.com/romkatv/powerlevel10k#oh-my-zsh"><li>https://github.com/romkatv/powerlevel10k#oh-my-zsh</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Article List-->
+  </body>
+  <footer class="footer mt-auto py-3 bg-dark text-center">
+    <div class="container">
+      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="">GitHub</a>. A star couldn't hurt...</span>
+    </div>
+  </footer>
+</html>
