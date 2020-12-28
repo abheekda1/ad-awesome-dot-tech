@@ -59,8 +59,8 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input disabled class="form-control me-2" type="search" placeholder="Unavailable" aria-label="Search">
-            <button class="btn btn-outline-secondary disabled" type="submit">Search</button>
+            <input id="search" class="form-control me-2" type="search" value="<?php echo $_GET["search-value"]; ?>" placeholder="Search Articles" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -69,24 +69,56 @@
     <!-- Start Article List -->
     <main>
       <div class="container" style="padding-top: 60px;">
+        <!-- Start Breadcrumb-->
+        <nav aria-label="breadcrumb" class="mt-5">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
         <div class="row">
-          <h1 class="mt-5 display-1">Articles</h1>
+          <h1 class="mt-3 mb-3 display-1">Articles</h1>
         </div>
-        <hr>
-        <div class="row">
-          <a class="link-secondary display-6 mb-5">How to configure Samba to work better with macOS</a>
-        </div>
-        <hr>
-        <div class="row">
-          <a class="link-secondary display-6 mb-5" href="zsh-terminal/">Improve the way your terminal looks and feels</a>
+        <div id="articleList">
+          <div class="row">
+            <hr>
+            <a class="link-secondary display-6 mb-5">How to configure Samba to work better with macOS</a>
+          </div>
+          <div class="row">
+            <hr>
+            <a class="link-secondary display-6 mb-5" href="zsh-terminal/">Improve the way your terminal looks and feels</a>
+          </div>
         </div>
       </div>
     </main>
     <!-- End Article List-->
+    <script>
+      $(document).ready(function () {
+        window.onload = (event) => {
+          var value = $("#search").val().toLowerCase();
+          $("#articleList div").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        };
+        $("#search").on("search", function () {
+          var value = $(this).val().toLowerCase();
+          $("#articleList div").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+        $("#search").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#articleList div").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+});
+    </script>
   </body>
   <footer class="footer mt-auto py-3 bg-dark text-center">
     <div class="container">
-      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="">GitHub</a>. A star couldn't hurt...</span>
+      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="https://github.com/ADawesomeguy/ad-awesome-dot-tech">GitHub</a>. A star couldn't hurt...</span>
     </div>
   </footer>
 </html>

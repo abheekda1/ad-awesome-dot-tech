@@ -31,7 +31,7 @@
                 Blog
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/blog/">All</a></li>
+                <li><a class="dropdown-item" href="blog/">All</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item disabled" href="#">Featured</a></li>
                 <li><a class="dropdown-item" href="#">Terminal Customization</a></li>
@@ -60,9 +60,9 @@
               </a>
             </li>
           </ul>
-          <form action="/blog/" class="d-flex">
-            <input name="search-value" class="form-control me-2" type="search" placeholder="Search Articles" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          <form class="d-flex">
+            <input disabled class="form-control me-2" type="search" placeholder="Unavailable" aria-label="Search">
+            <button class="btn btn-outline-secondary disabled" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -81,7 +81,7 @@
         </nav>
         <!-- End Breadcrumb -->
         <div class="row">
-          <h1 class="mt-3 display-2">Improve the way your terminal looks and feels</h1>
+          <h1 class="mt-5 display-2">Improve the way your terminal looks and feels</h1>
         </div>
         <div class="row">
           <h2 class="text-secondary mt-3 display-5">By: Abheek Dhawan</h2>
@@ -92,7 +92,7 @@
             <p class="lead">This is a simple tutorial on how to improve the look and feel of 
               your terminal with these three things:</p>
             <ul>
-              <li><h5>ZSH: A robust alternative to traditional <code>BASH</code></h5></li>
+              <li><h5>ZSH: A robust alternative to traditional BASH</h5></li>
               <li><h5>Oh-My-ZSH: An amazing framework for <code>ZSH</code> with many plugins and themes</h5></li>
               <li><h5>zsh-autosuggestions: An advanced plugin that makes command completion
                 suggestions based on previous commands.</h5></li>
@@ -157,19 +157,19 @@ cd fonts
             </p>
               <pre class="rounded language-vim" data-user="ad" data-host="server"><code>plugins = ()</code></pre>
             <p class="lead">
-              There are hundreds of plugins to choose from, from ones for your OS to things like <code>Git</code> and <code>Vim</code>.
+              There are hundreds of plugins to choose from, from ones for your OS to things like git and vim.
             </p>
             <h2 class="mt-5 mb-3">
               Step 3:
             </h2>
             <p class="lead">
-              Now that we've installed both <code>ZSH</code> and <code>Oh-My-ZSH</code>, there's just one last thing to do: installing <code>zsh-autosuggestions</code>.
+              Now that we've installed both ZSH and Oh-My-ZSH, there's just one last thing to do: installing zsh-autosuggestions.
               I find these to be extremely helpful because they recommend commands that I've used previously. To install it as an
-              <code>Oh-My-ZSH</code> custom plugin, you just have to run this script:
+              Oh-My-ZSH custom plugin, you just have to run this script:
             </p>
             <pre class="command-line language-bash" data-user="ad" data-host="server"><code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions</code></pre>
             <p class="lead">
-              Once that's done, simply add it as a plugin in the <code>~/.zshrc</code> file.
+              Once that's done, simply add it as a plugin in the ~/.zshrc file.
             </p>
             <h2 class="mt-5 mb-3">
               Conclusion
@@ -177,8 +177,8 @@ cd fonts
             <p class="lead">
               Now, you should have an awesome looking terminal in which you can navigate completions with your arrow keys,
           get suggestions based of your previous commands, and it's super customizable! You can take your terminal even
-          further by installing an analytics tool like <code>screenfetch</code> or <code>archey</code> and adding it to the end of your
-          <code>~/.zshrc</code> file. A fun alternative would be adding <code>fortune | cowsay</code> to the end of your <code>~/zshrc</code> file.
+          further by installing an analytics tool like screenfetch or archey and adding it to the end of your
+          ~/.zshrc file. A fun alternative would be adding "fortune | cowsay" to the end of your ~/.zshrc file.
             </p>
             <h5 class="mt-5">Sources and Helpful Links:</h5>
             <ul>

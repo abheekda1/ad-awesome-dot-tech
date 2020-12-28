@@ -60,9 +60,9 @@
               </a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input disabled class="form-control me-2" type="search" placeholder="Unavailable" aria-label="Search">
-            <button class="btn btn-outline-secondary disabled" type="submit">Search</button>
+          <form action="/blog/" class="d-flex">
+            <input name="search-value" class="form-control me-2" type="search" placeholder="Search Articles" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -85,7 +85,7 @@
       </div>
       <!-- End Intro -->
       <!-- Start Video Carousel -->
-      <div class="row align-items-center bg-light mt-5 mb-1 mx-1 border rounded border-dark">
+      <div class="row align-items-center bg-light mt-3 mb-3 mx-1 border rounded border-dark">
         <div class="text-center">
           <h1 class="mb-3 mx-5 display-4 text-secondary">Recent videos:</h2>
         </div>
@@ -93,10 +93,10 @@
 
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-home" data-slide-to="1"></li>
-            <li data-target="#carousel-home" data-slide-to="2"></li>
-            <li data-target="#carousel-home" data-slide-to="3"></li>
+            <li data-bs-target="#carousel-home" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-home" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-home" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-home" data-bs-slide-to="3"></li>
           </ol>
         
           <!-- The slideshow -->
@@ -129,7 +129,7 @@
   </body>
   <footer class="footer mt-auto py-3 bg-dark text-center">
     <div class="container">
-      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="">GitHub</a>. A star couldn't hurt...</span>
+      <span class="text-light">See a mistake or improvement to be made? This website is open-source! View and edit the source on <a class="link-secondary" href="https://github.com/ADawesomeguy/ad-awesome-dot-tech">GitHub</a>. A star couldn't hurt...</span>
     </div>
   </footer>
 </html>
